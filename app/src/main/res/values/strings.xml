@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">order</string>
+    <string name="count">數量</string>
+    <string name="add">+</string>
+    <string name="sub">-</string>
+    <string name="price">價格</string>
+    <string name="order">訂購</string>
+</resources>
