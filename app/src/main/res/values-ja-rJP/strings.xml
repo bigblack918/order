@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">egg sale</string>
+    <string name="addbag">2 dollaers/bag</string>
+    <string name="conbon">5 dollar/egg</string>
+    <string name="name">name</string>
+    <string name="order">order</string>
+    <string name="sub">-</string>
+    <string name="add">+</string>
+    <string name="infoText">info</string>
+</resources>

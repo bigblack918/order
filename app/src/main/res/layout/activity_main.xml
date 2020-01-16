@@ -8,63 +8,81 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/count"
+        style="@style/widthHight"
+        android:text="@string/conbon"
         android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <TextView
-        android:id="@+id/num"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
+    <EditText
+        android:id="@+id/name"
+        style="@style/widthHight"
+        android:hint="@string/name"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/add"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="add"
-        android:text="@string/add"
-        app:layout_constraintTop_toBottomOf="@id/num"
-        tools:layout_editor_absoluteX="29dp" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/sub"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="sub"
-        android:text="@string/sub"
-        app:layout_constraintTop_toBottomOf="@id/add"
-        tools:layout_editor_absoluteX="29dp" />
-
-    <TextView
-        android:id="@+id/price"
+    <LinearLayout
+        android:id="@+id/linearInto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/price"
-        android:textSize="20sp"
+        android:orientation="horizontal"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/sub" />
+        app:layout_constraintTop_toBottomOf="@id/name">
 
-    <TextView
-        android:id="@+id/priceNum"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sub"
+            style="@style/widthHight"
+            android:onClick="sub"
+            android:text="@string/sub"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/add"
+            tools:layout_editor_absoluteX="29dp" />
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add"
+            style="@style/widthHight"
+            android:onClick="add"
+            android:text="@string/add"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="29dp" />
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/addbag"
+        style="@style/widthHight"
+        android:text="@string/addbag"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/price" />
+        app:layout_constraintTop_toBottomOf="@id/linearInto" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/order"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/widthHight"
         android:onClick="order"
         android:text="@string/order"
-        app:layout_constraintTop_toBottomOf="@id/priceNum"
+        app:layout_constraintTop_toBottomOf="@id/addbag"
         tools:layout_editor_absoluteX="29dp" />
+
+    <TextView
+        android:id="@+id/infoText"
+        style="@style/widthHight"
+        android:text="@string/infoText"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/order" />
+
+    <TextView
+        android:id="@+id/info"
+        style="@style/widthHight"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/infoText" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

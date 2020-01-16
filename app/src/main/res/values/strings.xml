@@ -1,8 +1,10 @@
 <resources>
-    <string name="app_name">order</string>
-    <string name="count">數量</string>
+    <string name="app_name">雞蛋販賣機</string>
+    <string name="name">顧客姓名</string>
+    <string name="conbon">一顆五塊</string>
+    <string name="addbag">加購購物袋2元</string>
     <string name="add">+</string>
     <string name="sub">-</string>
-    <string name="price">價格</string>
+    <string name="infoText">訂單資訊</string>
     <string name="order">訂購</string>
 </resources>
